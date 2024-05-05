@@ -21,6 +21,20 @@ if (-not (Test-InternetConnection)) {
     break
 }
 
+# Powershell alias and funtions directory creaton
+$pwshalias = "$HOME\pwshalias"
+If(!(test-path -PathType container $pwshalias))
+{
+      New-Item -ItemType Directory -Path $pwshalias
+}
+
+pwshaf = $pwshalias\alias-and-functions.ps1
+if (!(Test-Path "$pwshaf"))
+{
+   New-Item -path "$pwshalias" -name "alias-and-functions.ps1" -type "file" -value "## File Created"
+   Write-Host "Created new file and text content added"
+}
+
 # Profile creation or update
 if (!(Test-Path -Path $PROFILE -PathType Leaf)) {
     try {

@@ -78,6 +78,9 @@ function prompt {
 $adminSuffix = if ($isAdmin) { " [ADMIN]" } else { "" }
 $Host.UI.RawUI.WindowTitle = "PowerShell {0}$adminSuffix" -f $PSVersionTable.PSVersion.ToString()
 
+# Importing custom alias and functions
+Import-Module $HOME\pwshalias\alias-and-functions.ps1
+
 # Utility Functions
 function Test-CommandExists {
     param($command)
