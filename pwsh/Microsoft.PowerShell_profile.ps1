@@ -89,7 +89,6 @@ function Test-CommandExists {
 $EDITOR = if (Test-CommandExists nano) { 'nano' }
           elseif (Test-CommandExists notepad++) { 'notepad++' }
           else { 'notepad' }
-Set-Alias -Name nano -Value $EDITOR
 
 function Edit-Profile {
     nano $PROFILE.CurrentUserAllHosts
