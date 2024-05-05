@@ -28,10 +28,9 @@ If(!(test-path -PathType container $pwshalias))
       New-Item -ItemType Directory -Path $pwshalias
 }
 
-pwshaf = $pwshalias\alias-and-functions.ps1
-if (!(Test-Path "$pwshaf"))
+if (!(Test-Path "$HOME\pwshalias\alias-and-functions.ps1"))
 {
-   New-Item -path "$pwshalias" -name "alias-and-functions.ps1" -type "file" -value "## File Created"
+   New-Item -path "$HOME\pwshalias\" -name "alias-and-functions.ps1" -type "file" -value "## File Created"
    Write-Host "Created new file and text content added"
 }
 
