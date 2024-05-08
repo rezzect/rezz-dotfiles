@@ -2,9 +2,11 @@
 
 cd /tmp
 mkdir fonts
+cd fonts
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/CascadiaMono.zip
 unzip CascadiaMono.zip
 rm CascadiaMono.zip
+mkdir ~/.local/share/fonts
 cp * ~/.local/share/fonts
 cd ~/
 rm /tmp/fonts -rf
