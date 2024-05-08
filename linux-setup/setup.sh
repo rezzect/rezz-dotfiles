@@ -66,15 +66,7 @@ installDepend() {
     ## Check for dependencies.
     DEPENDENCIES='zsh zoxide trach-cli'
     echo -e "${YELLOW}Installing dependencies...${RC}"
-    if [[ $PACKAGER == "pacman" ]]; then
-        if ! command_exists yay; then
-            echo "Installing yay..."
-            sudo ${PACKAGER} --noconfirm -S base-devel
-            $(cd /opt && sudo git clone https://aur.archlinux.org/yay-git.git && sudo chown -R ${USER}:${USER} ./yay-git && cd yay-git && makepkg --noconfirm -si)
-        else
-            echo "Command yay already installed"
-        fi
-        yay --noconfirm -S ${DEPENDENCIES}
+        pacman --noconfirm -S ${DEPENDENCIES}
     else
         sudo ${PACKAGER} install -yq ${DEPENDENCIES}
     fi
