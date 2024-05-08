@@ -68,8 +68,8 @@ installDepend() {
     ## Check for dependencies.
     DEPENDENCIES='zip unzip zsh zoxide trash-cli kitty'
     echo -e "${YELLOW}Installing dependencies...${RC}"
-        sudo pacman -Sy
-        sudo pacman --noconfirm -S ${DEPENDENCIES}
+        sudo apt update
+        sudo apt install -y ${DEPENDENCIES}
 }
 
 installOhMyPosh() {
