@@ -1,5 +1,14 @@
 #!/bin/bash
 
+cd /tmp
+mkdir fonts
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/CascadiaMono.zip
+unzip CascadiaMono.zip
+rm CascadiaMono.zip
+cp * ~/.local/share/fonts
+cd ~/
+rm /tmp/fonts -rf
+
 mkdir ~/.rezz-dotfiles
 mkdir ~/.rezz-dotfiles/zsh
 mkdir ~/.rezz-dotfiles/kitty
