@@ -4,6 +4,7 @@ mkdir ~/.rezz-dotfiles
 mkdir ~/.rezz-dotfiles/zsh
 mkdir ~/.rezz-dotfiles/kitty
 mkdir ~/.rezz-dotfiles/ssh
+mkdir ~/.rezz-dotfiles/omp-themes
 mkdir ~/.ssh
 mkdir ~/.omp-themes
 mkdir ~/.config/kitty
