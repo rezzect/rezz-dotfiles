@@ -66,7 +66,7 @@ installDepend() {
     ## Check for dependencies.
     DEPENDENCIES='zsh zoxide trach-cli'
     echo -e "${YELLOW}Installing dependencies...${RC}"
-        pacman --noconfirm -S ${DEPENDENCIES}
+        sudo pacman --noconfirm -S ${DEPENDENCIES}
 }
 
 installOhMyPosh() {
