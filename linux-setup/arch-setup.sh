@@ -83,10 +83,10 @@ installOhMyPosh() {
 }
 
 linkConfig() {
-    ln -svf ~/.rezz-dotfiles/zsh/.zshrc ~/.zshrc
-    ln -svf ~/.rezz-dotfiles/omp-themes/rezztheme-edit.omp.json ~/.omp-themes/
-    ln -svf ~/.rezz-dotfiles/kitty/kitty.conf ~/.config/kitty/
-    ln -svf ~/.rezz-dotfiles/ssh/authorized_keys ~/.ssh/
+    ln -s ~/.rezz-dotfiles/zsh/.zshrc ~/.zshrc
+    ln -s ~/.rezz-dotfiles/omp-themes/rezztheme-edit.omp.json ~/.omp-themes/
+    ln -s ~/.rezz-dotfiles/kitty/kitty.conf ~/.config/kitty/
+    ln -s ~/.rezz-dotfiles/ssh/authorized_keys ~/.ssh/
 }
 
 checkEnv
