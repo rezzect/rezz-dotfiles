@@ -86,8 +86,8 @@ installOhMyPosh() {
         return
     fi
 
-    if ! sudo curl -sS https://starship.rs/install.sh | sh; then
-        echo -e "${RED}Something went wrong during starship install!${RC}"
+    if ! sudo curl -sS https://ohmyposh.dev/install.sh | sh; then
+        echo -e "${RED}Something went wrong during Oh My Posh install!${RC}"
         exit 1
     fi
 }
