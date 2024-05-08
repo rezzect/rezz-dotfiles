@@ -64,7 +64,7 @@ curl -o ~/.rezz-dotfiles/kitty/kitty.conf https://raw.githubusercontent.com/rezz
 
 installDepend() {
     ## Check for dependencies.
-    DEPENDENCIES='zsh zoxide trach-cli'
+    DEPENDENCIES='zsh zoxide trash-cli'
     echo -e "${YELLOW}Installing dependencies...${RC}"
         sudo pacman --noconfirm -S ${DEPENDENCIES}
 }
