@@ -6,6 +6,7 @@ mkdir ~/.rezz-dotfiles/kitty
 mkdir ~/.rezz-dotfiles/ssh
 mkdir ~/.ssh
 mkdir ~/.omp-themes
+mkdir ~/.config/kitty
 
 cd ~/.rezz-dotfiles
 RC='\e[0m'
