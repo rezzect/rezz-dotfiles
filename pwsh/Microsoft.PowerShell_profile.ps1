@@ -229,6 +229,11 @@ Invoke-WebRequest -Uri 'https://github.com/Vencord/Installer/releases/latest/dow
 Remove-Item VencordInstallerCli.exe
 }
 
+# CTT Win Util
+function winutil {
+sudo "irm https://christitus.com/win | iex"
+}
+
 # Enhanced PowerShell Experience
 Set-PSReadLineOption -Colors @{
     Command = 'Yellow'
