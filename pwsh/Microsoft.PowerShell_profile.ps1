@@ -221,10 +221,13 @@ function pst { Get-Clipboard }
 
 # Alias
 Set-Alias -Name btop4win -Value btop
+
+# Vencord Installer
 function vencord-install {
 Invoke-WebRequest -Uri 'https://github.com/Vencord/Installer/releases/latest/download/VencordInstallerCli.exe' -OutFile VencordInstallerCli.exe
 ./VencordInstallerClie.exe
 Remove-Item VencordInstallerClie.exe
+}
 
 # Enhanced PowerShell Experience
 Set-PSReadLineOption -Colors @{
