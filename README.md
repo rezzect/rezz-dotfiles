@@ -18,6 +18,19 @@ irm "https://raw.githubusercontent.com/rezzect/rezz-dotfiles/master/pwsh/setup.p
 # ⌨️ Rezz SSH Authorized Keys
 
 🐧Linux
+Personal Setup (If you use it it'll install my ssh keys into your system!!)
+
+Arch
+```
+https://raw.githubusercontent.com/rezzect/rezz-dotfiles/master/linux-setup/arch-setup.sh
+```
+
+Debian
+```
+curl Ss https://raw.githubusercontent.com/rezzect/rezz-dotfiles/master/linux-setup/debian-setup.sh | sh
+```
+
+Other Distros
 ```
 coming soon...
 ```
