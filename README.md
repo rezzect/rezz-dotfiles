@@ -22,7 +22,7 @@ Personal Setup (If you use it it'll install my ssh keys into your system!!)
 
 Arch
 ```
-https://raw.githubusercontent.com/rezzect/rezz-dotfiles/master/linux-setup/arch-setup.sh
+curl Ss https://raw.githubusercontent.com/rezzect/rezz-dotfiles/master/linux-setup/arch-setup.sh | sh
 ```
 
 Debian
