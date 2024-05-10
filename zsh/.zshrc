@@ -37,5 +37,9 @@ export EDITOR="nano"
 eval "$(oh-my-posh init zsh --config ~/.omp-themes/rezztheme-edit.omp.json)"
 eval "$(zoxide init zsh)"
 
+# Default Aliases
+omp-update='curl -s https://ohmyposh.dev/install.sh | sudo bash -s' #Update Oh-My-Posh
+
 # Call on .alias file
 . ~/.aliases
+
