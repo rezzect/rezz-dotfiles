@@ -237,8 +237,8 @@ sudo "irm https://christitus.com/win | iex"
 # Discord Install/Reinstall with vencord
 function discord-ven-install {
 winget uninstall Discord.Discord
-Remove-Item $HOME\AppData\Local\Discord -Recurse
-Remove-Item $HOME\AppData\Roaming\discord -Recurse
+Remove-Item -Force -Recurse -Path $HOME\AppData\Local\Discord
+Remove-Item -Force -Recurse -Path $HOME\AppData\Roaming\discord
 winget install -e --id Discord.Discord
 Invoke-WebRequest -Uri 'https://github.com/Vencord/Installer/releases/latest/download/VencordInstallerCli.exe' -OutFile VencordInstallerCli.exe
 Write-Host (("**Letting Discord Initialize**" | ConvertFrom-Markdown -AsVT100EncodedString).VT100EncodedString).Replace("`n", '') -foregroundColor Red -NoNewline
@@ -250,8 +250,8 @@ Remove-Item VencordInstallerCli.exe
 # Discord Install/Reinstall Vanilla
 function discord-install {
 winget uninstall Discord.Discord
-Remove-Item $HOME\AppData\Local\Discord -Recurse
-Remove-Item $HOME\AppData\Roaming\discord -Recurse
+Remove-Item -Force -Recurse -Path $HOME\AppData\Local\Discord -Recurse
+Remove-Item -Force -Recurse -Path $HOME\AppData\Roaming\discord -Recurse
 winget install -e --id Discord.Discord
 }
 
