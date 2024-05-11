@@ -241,6 +241,8 @@ Remove-Item $HOME\AppData\Local\Discord
 Remove-Item $HOME\AppData\Roaming\discord
 winget install -e --id Discord.Discord
 Invoke-WebRequest -Uri 'https://github.com/Vencord/Installer/releases/latest/download/VencordInstallerCli.exe' -OutFile VencordInstallerCli.exe
+Write-Host (("**Letting Discord Initialize**" | ConvertFrom-Markdown -AsVT100EncodedString).VT100EncodedString).Replace("`n", '') -foregroundColor Red -NoNewline
+Start-Sleep -Seconds 30
 ./VencordInstallerCli.exe
 Remove-Item VencordInstallerCli.exe
 }
