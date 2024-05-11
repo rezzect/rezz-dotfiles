@@ -234,6 +234,23 @@ function winutil {
 sudo "irm https://christitus.com/win | iex"
 }
 
+# Discord Install/Reinstall with vencord
+Remove-Item $HOME\AppData\Local\Discord
+Remove-Item $HOME\AppData\Roaming\discord
+function "discord-ven install" {
+winget install -e --id Discord.Discord
+Invoke-WebRequest -Uri 'https://github.com/Vencord/Installer/releases/latest/download/VencordInstallerCli.exe' -OutFile$
+./VencordInstallerCli.exe
+Remove-Item VencordInstallerCli.exe
+}
+
+# Discord Install/Reinstall Vanilla
+function "discord install" {
+Remove-Item $HOME\AppData\Local\Discord
+Remove-Item $HOME\AppData\Roaming\discord
+winget install -e --id Discord.Discord
+}
+
 # Enhanced PowerShell Experience
 Set-PSReadLineOption -Colors @{
     Command = 'Yellow'
