@@ -220,7 +220,7 @@ function cpy { Set-Clipboard $args[0] }
 function pst { Get-Clipboard }
 
 # Alias
-Set-Alias -Name btop4win -Value btop
+Set-Alias -Name btop -Value btop4win
 
 # Vencord Installer
 function vencord-install {
