@@ -266,7 +266,7 @@ Set-PSReadLineOption -Colors @{
 $env:DISPLAY="127.0.0.1:0.0"
 
 ## Final Line to set prompt
-oh-my-posh init pwsh --config https://raw.githubusercontent.com/rezzect/rezz-dotfiles/master/omp-themes/rezztheme-edit.omp.json | Invoke-Expression
+oh-my-posh init pwsh --config https://raw.githubusercontent.com/rezzect/rezz-dotfiles/refs/heads/master/omp-themes/rezztheme-edit.omp.json | Invoke-Expression
 if (Get-Command zoxide -ErrorAction SilentlyContinue) {
     Invoke-Expression (& { (zoxide init powershell | Out-String) })
 } else {
